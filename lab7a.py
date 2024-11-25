@@ -1,5 +1,12 @@
 #!/usr/bin/env python3
-# Student ID: [seneca_id]
+
+# Name: Prasad Mistry
+# Student Number: 111964193
+# Student Email: pmistry21@myseneca.ca
+# Course: OPS445
+# Section: ZAA
+# Semester: Fall 2024
+
 class Time:
     """Simple object type for time of the day.
     data attributes: hour, minute, second
@@ -20,6 +27,15 @@ def sum_times(t1, t2):
     sum.hour = t1.hour + t2.hour
     sum.minute = t1.minute + t2.minute
     sum.second = t1.second + t2.second
+
+    if sum.second >= 60:
+        sum.minute = sum.minute + (sum.second / 60)
+        sum.second = sum.second - (int(sum.second / 60) * 60)
+
+    if sum.minute >= 60:
+        sum.hour = sum.hour + int(sum.minute / 60)
+        sum.minute = sum.minute - (int(sum.minute / 60) * 60)
+
     return sum
 
 def valid_time(t):
