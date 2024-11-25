@@ -1,5 +1,12 @@
 #!/usr/bin/env python3
-# Student ID: [seneca_id]
+
+# Name: Prasad Mistry
+# Student Number: 111964193
+# Student Email: pmistry21@myseneca.ca
+# Course: OPS445
+# Section: ZAA
+# Semester: Fall 2024
+
 from lab7a import *
 t1 = Time(8,0,0)
 t2 = Time(8,55,0)
