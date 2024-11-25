@@ -32,8 +32,8 @@ class Time:
         """return the result by using sum_times() method"""
         self_sec = self.time_to_sec()
         t2_sec = t2.time_to_sec()
-        sum = sec_to_time(self_sec + t2_sec)
-        return sum
+        add_sum = sec_to_time(self_sec + t2_sec)
+        return add_sum
             
     def format_time(self):
         """Return time object (t) as a formatted string"""
